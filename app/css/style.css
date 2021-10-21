@@ -276,7 +276,7 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Montserrat Light';
+  font-family: 'GothamPro Light';
   src: url("../fonts/GothamPro/GothamPro-Light.woff2");
   font-weight: normal;
   font-style: normal;
@@ -284,7 +284,7 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Montserrat Regular';
+  font-family: 'GothamPro Regular';
   src: url("../fonts/GothamPro/GothamPro.woff2");
   font-weight: normal;
   font-style: normal;
@@ -292,7 +292,7 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Montserrat Medium';
+  font-family: 'GothamPro Medium';
   src: url("../fonts/GothamPro/GothamPro.woff2");
   font-weight: normal;
   font-style: normal;
@@ -300,7 +300,7 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Montserrat Bold';
+  font-family: 'GothamPro Bold';
   src: url("../fonts/GothamPro/GothamPro-Bold.woff2");
   font-weight: bold;
   font-style: normal;
@@ -308,7 +308,7 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Montserrat Black';
+  font-family: 'GothamPro Black';
   src: url("../fonts/GothamPro/GothamPro-Black.woff2");
   font-weight: bold;
   font-style: normal;
@@ -316,7 +316,7 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Montserrat Regular';
+  font-family: 'BebasNeue Regular';
   src: url("../fonts/BebasNeue/BebasNeue.woff2");
   font-weight: normal;
   font-style: normal;
@@ -324,7 +324,7 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Montserrat Bold';
+  font-family: 'BebasNeue Bold';
   src: url("../fonts/BebasNeue/BebasNeueBold.woff2");
   font-weight: normal;
   font-style: normal;
@@ -335,7 +335,7 @@ body,
 button,
 input {
   color: #fff;
-  font-family: "Montserrat Regular";
+  font-family: "Montserrat Medium";
   font-size: 16px;
 }
 
@@ -352,6 +352,19 @@ button {
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.title {
+  color: #ffde22;
+  font-family: 'GothamPro Black';
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.subtitle {
+  font-family: 'GothamPro Black';
+  color: #fff;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 767px) {

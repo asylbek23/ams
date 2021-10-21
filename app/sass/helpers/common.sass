@@ -1,6 +1,6 @@
 body, button, input
   color: #fff
-  font-family: $main_font_regular
+  font-family: $main-font
   font-size: 16px
   // line-height: 1.5
 
@@ -17,8 +17,15 @@ strong
   +wrapper()
 
 .title
+	+c-yellow
+	+f-black
+	text-transform: uppercase
+	font-size: 30px
   // +adaptive-value('font-size', , , 1)
 
 .subtitle
+	+f-black
+	color: #fff
+	text-transform: uppercase
 
 .text
