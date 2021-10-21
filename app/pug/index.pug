@@ -1,6 +1,6 @@
 extends template
 
-//- include index/block_name
+include index/main
 
 include components/modals
 
@@ -13,7 +13,7 @@ block head
 		})
 
 block content
-	//- +block_name()
+	+main()
 
 	+modals()
 
