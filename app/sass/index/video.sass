@@ -1,0 +1,42 @@
+.video
+	margin-top: 60px
+	+adaptive-value('padding-bottom', 90, 40, 1)
+	h2
+
+	&__player
+		background: #222
+		width: 800px
+		height: 490px
+		position: relative
+		margin-left: 160px
+		+adaptive-value('margin-top', 75, 15, 1)
+		+md-block
+			width: 700px
+			height: 400px
+			margin-left: 60px
+		&:before
+			content: ''
+			position: absolute
+			bottom: -125px
+			left: -125px
+			background: url($img+'arrows-left-big.svg') center center/cover no-repeat
+			width: 140px
+			height: 140px
+			+md-block
+				width: 90px
+				height: 90px
+				bottom: -75px
+				left: -75px
+		&:after
+			content: ''
+			position: absolute
+			top: -148px
+			right: -137px
+			background: url($img+'arrows-right-big.svg') center center/cover no-repeat
+			width: 160px
+			height: 160px
+			+md-block
+				width: 110px
+				height: 110px
+				top: -105px
+				right: -95px

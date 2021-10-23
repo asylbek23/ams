@@ -1,31 +1,65 @@
 body, button, input
-  color: #fff
-  font-family: $main-font
-  font-size: 16px
-  // line-height: 1.5
+	color: #fff
+	font-family: $main
+	// text-transform: uppercase
+	font-size: 16px
+	line-height: 1.3
 
 button
-  cursor: pointer
+	cursor: pointer
 
 strong
-  // +bold
+	// +bold
+
+html
+	overflow-x: hidden
 
 .page
-	background-color: #0e254f
+	// background-color: #3661b3
+	background: url($img+'bg.webp') center center/cover no-repeat
 
 .container
-  +wrapper()
+	+wrapper()
 
 .title
 	+c-yellow
 	+f-black
 	text-transform: uppercase
-	font-size: 30px
-  // +adaptive-value('font-size', , , 1)
+	+adaptive-value('font-size', 64, 30, 1)
+	// +adaptive-value('font-size', , , 1)
 
 .subtitle
 	+f-black
 	color: #fff
 	text-transform: uppercase
+	font-size: 24px
+
+.text-center
+	text-align: center
 
 .text
+	+adaptive-value('font-size', 16, 11, 1)
+
+// Swiper
+// .navigation
+// 	display: flex
+// 	align-items: center
+// 	justify-content: space-between
+// 	position: absolute
+// 	top: 50%
+// 	left: 0
+// 	transform: translateY(-50%)
+// 	width: 100%
+// 	z-index: 2
+
+.prev
+		width: 45px
+		height: 45px
+		background: url($img+'arrow.svg') center center/cover no-repeat
+		cursor: pointer
+.next
+	width: 45px
+	height: 45px
+	background: url($img+'arrow.svg') center center/cover no-repeat
+	cursor: pointer
+	transform: rotate(180deg)

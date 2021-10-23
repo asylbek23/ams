@@ -1,0 +1,129 @@
+.for
+	padding-top: 90px
+
+	&__content
+		display: flex
+		border-bottom: 2px solid #16bee0
+		padding: 50px 0
+
+	&__person
+		display: flex
+		flex-direction: column
+		min-width: 290px
+		+md-block
+			min-width: 190px
+			max-width: 190px
+
+	&__text
+		margin-top: 35px
+		strong
+			+adaptive-value('font-size', 26, 24, 1)
+			+f-black
+		p
+			margin-top: 10px
+
+	&__subtitle
+		+adaptive-value('font-size', 26, 14, 1)
+		+f-black
+		margin-bottom: 10px
+
+	&__slider-wrapper1
+		position: relative
+		padding-left: 23px
+		margin-left: 70px
+		min-width: 0
+		+md-block
+			margin-left: 40px
+
+		.swiper-slide
+			width: auto !important
+			text-align: center
+			margin-right: 20px
+			img
+				display: block
+				max-height: 280px
+				max-width: none
+				height: 280px
+			span
+				display: block
+				margin-top: 25px
+
+		.navigation
+			position: absolute
+			top: 50%
+			transform: translateY(-100%)
+			left: 0
+			width: 90%
+			display: flex
+			align-items: center
+			justify-content: space-between
+			z-index: 2
+
+	&__slider-wrapper2
+		position: relative
+		padding-left: 23px
+		margin-left: 70px
+		min-width: 0
+		+md-block
+			margin-left: 40px
+
+		.swiper-slide
+			width: auto !important
+			text-align: center
+			margin-right: 20px
+			img
+				display: block
+				max-height: 360px
+				max-width: none
+				min-height: 360px
+				// object-fit: cover
+				// height: 360px
+			span
+				display: block
+				margin-top: 25px
+
+		.navigation
+			position: absolute
+			top: 50%
+			transform: translateY(-100%)
+			left: 0
+			width: 80%
+			display: flex
+			align-items: center
+			justify-content: space-between
+			z-index: 2
+
+	&__slider-wrapper3
+		position: relative
+		padding-left: 23px
+		margin-left: 70px
+		min-width: 0
+		+md-block
+			margin-left: 40px
+
+		.swiper-slide
+			width: auto !important
+			text-align: center
+			margin-right: 20px
+			img
+				display: block
+				max-height: 355px
+				width: 355px
+				max-width: none
+				object-fit: cover
+				height: 100%
+				// height: 360px
+			span
+				display: block
+				margin-top: 25px
+
+		.navigation
+			position: absolute
+			top: 50%
+			transform: translateY(-170%)
+			left: 0
+			width: 90%
+			display: flex
+			align-items: center
+			justify-content: space-between
+			z-index: 2

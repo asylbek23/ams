@@ -1,0 +1,87 @@
+.hero
+	padding-top: 35px
+	+md-block
+		padding-top: 15px
+
+	&__brand
+		font-family: $main-light
+		text-transform: none
+		+adaptive-value('font-size', 16, 10, 1)
+		text-align: right
+		margin-right: 150px
+		+md-block
+			margin-right: 50px
+
+	//-------------------- Title -------------------->
+	&__title
+		+f-bebas
+		+adaptive-value('font-size', 86, 42, 1)
+		text-transform: uppercase
+		line-height: 1.1
+		margin-top: 30px
+		+md-block
+			margin-top: 10px
+		b
+			+f-black
+			+adaptive-value('font-size', 82, 62, 1)
+			padding-right: 20px
+			// display: block
+		strong
+			// display: block
+			+c-yellow
+			+f-bebas
+			font-size: 58px
+			+adaptive-value('font-size', 82, 58, 1)
+		&-types
+			+adaptive-value('font-size', 86, 40, 1)
+			display: block
+			position: relative
+			+sm-block
+				display: inline-block
+			&:after
+				content: ''
+				position: absolute
+				top: -18px
+				// right: 365px
+				right: 30%
+				background: url($img+'0.webp') center center/cover no-repeat
+				width: 150px
+				height: 150px
+				+to(1330px)
+					right: 31%
+					width: 100px
+					height: 100px
+					top: -5px
+				+lg-block
+					right: 24%
+		.t-yellow
+			+c-yellow
+		.t-cyan
+			+c-cyan
+		&-holiday
+			+adaptive-value('font-size', 82, 42, 1)
+		&-for
+			display: block
+			font-family: $main-medium
+			+adaptive-value('font-size', 24, 13, 1)
+			margin-top: 5px
+
+	//-------------------- Subtitle -------------------->
+	.subtitle
+		line-height: 1.1
+		+adaptive-value('font-size', 36, 24, 1)
+
+
+	&__content
+		display: flex
+		+sm-block
+			flex-direction: column
+
+	.download
+		+sm-block
+			order: 2
+
+	&__img
+		margin-top: -100px
+		+sm-block
+			margin-top: 0
