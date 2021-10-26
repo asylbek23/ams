@@ -1,0 +1,23 @@
+mixin archive()
+	+b.SECTION.archive
+		.container
+			h2.title ЧТО В АРХИВЕ?
+			+e.items
+				+e.item
+					+e.img
+						img(src="img/2.png", alt="image")
+					+e.descr
+						span.subtitle ФАЙЛЫ PNG
+						p.text Не тратьте время на вырез картинок! Качественно вырезанные png файлы на Казахстанскую тематику
+				+e.item
+					+e.img
+						img(src="img/3.png", alt="image")
+					+e.descr
+						span.subtitle ВЕКТОР ФАЙЛЫ
+						p.text Исходники векторных <br> файлов на Казахстанскую тематику
+				+e.item
+					+e.img
+						img(src="img/4.png", alt="image")
+					+e.descr
+						span.subtitle ГОТОВЫЕ ОТКРЫТКИ
+						p.text Устали каждый раз делать вижуалы на  праздники? готовые файлы всех Казахстанских праздников в PSD, PNG, JPEG

@@ -1,22 +1,17 @@
 body, button, input
 	color: #fff
 	font-family: $main
-	// text-transform: uppercase
 	font-size: 16px
 	line-height: 1.3
 
 button
 	cursor: pointer
 
-strong
-	// +bold
-
 html
 	overflow-x: hidden
 
 .page
-	// background-color: #3661b3
-	background: url($img+'bg.webp') center center/cover no-repeat
+	background-color: #173B79
 
 .container
 	+wrapper()
@@ -26,7 +21,6 @@ html
 	+f-black
 	text-transform: uppercase
 	+adaptive-value('font-size', 64, 30, 1)
-	// +adaptive-value('font-size', , , 1)
 
 .subtitle
 	+f-black
@@ -40,23 +34,12 @@ html
 .text
 	+adaptive-value('font-size', 16, 11, 1)
 
-// Swiper
-// .navigation
-// 	display: flex
-// 	align-items: center
-// 	justify-content: space-between
-// 	position: absolute
-// 	top: 50%
-// 	left: 0
-// 	transform: translateY(-50%)
-// 	width: 100%
-// 	z-index: 2
-
 .prev
-		width: 45px
-		height: 45px
-		background: url($img+'arrow.svg') center center/cover no-repeat
-		cursor: pointer
+	width: 45px
+	height: 45px
+	background: url($img+'arrow.svg') center center/cover no-repeat
+	cursor: pointer
+
 .next
 	width: 45px
 	height: 45px

@@ -1,0 +1,83 @@
+mixin for()
+	+b.SECTION.for
+		.container
+			h2.title ДЛЯ КОГО ЭТА БАЗА:
+
+			//- Content - 1
+			+e.content
+				+e.person
+					img(src="img/5.png", alt="person")
+					+e.text
+						strong ДЛЯ ДИЗАЙНЕРОВ
+						p Используйте наши готовые файлы для различных ваших работ. Это быстро и качественно!
+
+				+e.slider-wrapper1
+					+e.subtitle ИСПОЛЬЗУЙТЕ ИХ ВЕЗДЕ:
+					+e.slider1.swiper
+						.swiper-wrapper
+							.swiper-slide.w217
+								img(src="img/8.jpg", alt="slide" width="387" height="273")
+								span Вижуалы, открытки
+							.swiper-slide.w259
+								img(src="img/9.jpg", alt="slide" width="463" height="273")
+								span Презентации
+							.swiper-slide.w160
+								img(src="img/10.png", alt="slide" width="298" height="280")
+								span В полиграфии
+							.swiper-slide.w162
+								img(src="img/11.png", alt="slide" width="338" height="269")
+								span На баннерах
+
+					.navigation
+						.swiper-prev1.prev
+						.swiper-next1.next
+
+			//- Content - 2
+			+e.content
+				+e.person
+					img(src="img/6.png", alt="person")
+					+e.text
+						strong ДЛЯ SMMЩИКОВ
+						p С нашими файлами вы с легкостью сможете сделать любой пост.  + у вас будут вижуалы всех праздников на целый год!
+
+				+e.slider-wrapper2
+					+e.slider2.swiper
+						.swiper-wrapper
+							.swiper-slide.w220
+								img(src="img/14.jpg", alt="slide" width="362" height="362")
+								span Все праздники, <br> в исходниках PSD, PNG
+							.swiper-slide.w158
+								img(src="img/12.jpg", alt="slide" width="193" height="362")
+								span Формат <br> сторис
+							.swiper-slide.w120
+								img(src="img/13.png", alt="slide" width="255" height="362")
+								span Формат <br> поста
+
+					.navigation
+						.swiper-prev2.prev
+						.swiper-next2.next
+
+			//- Content - 3
+			+e.content
+				+e.person
+					img(src="img/7.png", alt="person")
+					+e.text
+						strong ДЛЯ БИЗНЕСМЕНОВ
+						p Вы сами ведете свой инстаграм? Надоело искать некрасивые картинки к праздникам? Теперь у вас будут все праздники на целый год!
+
+				+e.slider-wrapper3
+					+e.slider3.swiper
+						.swiper-wrapper
+							.swiper-slide
+								img(src="img/30.jpg", alt="slide" width="357" height="357")
+								span Все файлы готовы <br> для постинга
+							.swiper-slide
+								img(src="img/31.jpg", alt="slide" width="357" height="357")
+								span Можете вставить <br> свой логотип
+							.swiper-slide
+								img(src="img/32.jpg", alt="slide" width="357" height="357")
+								span И подобрать близкую <br> вам стилистику
+
+					.navigation
+						.swiper-prev3.prev
+						.swiper-next3.next

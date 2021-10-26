@@ -1,0 +1,7 @@
+mixin video()
+	+b.SECTION.video
+		.container
+			h2.title ПОСМОТРИТЕ ВСЁ САМИ:
+			+e.player
+				video(controls)
+					source(src="video/video.mp4")

@@ -1,6 +1,11 @@
 extends template
 
-include index/main
+include index/hero
+include index/archive
+include index/video
+include index/themes
+include index/for
+include index/about
 
 include components/modals
 
@@ -13,7 +18,12 @@ block head
 		})
 
 block content
-	+main()
+	+hero()
+	+archive()
+	+video()
+	+themes()
+	+for()
+	+about()
 
 	+modals()
 

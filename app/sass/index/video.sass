@@ -2,6 +2,10 @@
 	margin-top: 60px
 	+adaptive-value('padding-bottom', 90, 40, 1)
 	h2
+		+to(1023px)
+			max-width: 420px
+		+xs-block
+			max-width: 290px
 
 	&__player
 		background: #222
@@ -13,7 +17,16 @@
 		+md-block
 			width: 700px
 			height: 400px
-			margin-left: 60px
+		+to(1023px)
+			width: 500px
+			height: 300px
+			margin-left: auto
+			margin-right: auto
+		+sm-block
+			width: 80%
+		+xs-block
+			width: 100%
+			height: 210px
 		&:before
 			content: ''
 			position: absolute
@@ -27,6 +40,15 @@
 				height: 90px
 				bottom: -75px
 				left: -75px
+			+sm-block
+				background: url($img+'arrows-left.svg') center center/cover no-repeat
+				width: 45px
+				height: 52px
+				left: 0
+				transform: rotate(-65deg)
+			+xs-block
+				left: 7px
+
 		&:after
 			content: ''
 			position: absolute
@@ -40,3 +62,18 @@
 				height: 110px
 				top: -105px
 				right: -95px
+			+sm-block
+				background: url($img+'arrows-right.svg') center center/cover no-repeat
+				right: 5px
+				width: 59px
+				height: 70px
+				transform: rotate(-50deg)
+			+xs-block
+				right: 7px
+				top: -75px
+				width: 45px
+				height: 55px
+
+		video
+			width: 100%
+			height: 100%

@@ -23,6 +23,14 @@ const swiper = new Swiper('.themes__slider', {
 
 	breakpoints: {
 		375: { // when window width is >= 375px
+			slidesPerView: 'auto',
+			slidesPerGroup: 1,
+			spaceBetween: 0,
+			loop: false
+		},
+		768: { // when window width is >= 375px
+			slidesPerView: 2,
+			slidesPerGroup: 2,
 		},
 		1024: { // when window width is >= 1024px
 			slidesPerView: 3,
@@ -35,9 +43,7 @@ const swiper = new Swiper('.themes__slider', {
 
 // For Slider
 const swiper1 = new Swiper('.for__slider1', {
-	// slidesPerView: 2,
 	slidesPerView: 'auto',
-	// spaceBetween: 20,
 	loop: true,
 	navigation: {
 		nextEl: '.swiper-next1',
@@ -46,6 +52,8 @@ const swiper1 = new Swiper('.for__slider1', {
 
 	breakpoints: {
 		375: { // when window width is >= 375px
+			slidesPerView: 'auto',
+			loop: false,
 		},
 		1024: { // when window width is >= 1024px
 		},
@@ -65,6 +73,8 @@ const swiper2 = new Swiper('.for__slider2', {
 
 	breakpoints: {
 		375: { // when window width is >= 375px
+			loop: false,
+			initialSlide: 1
 		},
 		1024: { // when window width is >= 1024px
 		},
@@ -77,7 +87,6 @@ const swiper2 = new Swiper('.for__slider2', {
 
 const swiper3 = new Swiper('.for__slider3', {
 	slidesPerView: 'auto',
-	// spaceBetween: 20,
 	loop: true,
 	navigation: {
 		nextEl: '.swiper-next3',
@@ -86,6 +95,7 @@ const swiper3 = new Swiper('.for__slider3', {
 
 	breakpoints: {
 		375: { // when window width is >= 375px
+			loop: false,
 		},
 		1024: { // when window width is >= 1024px
 		},
@@ -96,8 +106,11 @@ const swiper3 = new Swiper('.for__slider3', {
 
 
 // Timer
+// let out = document.getElementById('timeleft');
+// let start = new Date(out.dataset.end);
+
 let out = document.getElementById('timeleft');
-let start = new Date(out.dataset.end);
+let start = new Date(2090, 12, 12);
 
 let timer = () => {
   let diff = start.getTime() - Date.now();

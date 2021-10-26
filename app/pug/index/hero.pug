@@ -1,0 +1,39 @@
+mixin hero()
+	+b.SECTION.hero
+		.container
+			+e.brand Студия Дизайна и Брендинга «AMS»
+
+			+e.H1.title
+				+e.SPAN.title-top
+					strong большая
+					span.title-yellow база материалов
+
+				+e.SPAN.title-bottom
+					span.title-yellow png,
+					span.title-blue  векторов,
+					|  вижуалов,
+
+				+e.SPAN.title-holiday
+					span всех праздников
+					span.little-title для дизайнеров, smmщиков
+
+			+e.content
+				+b.SECTION.download
+					.container
+						h3.subtitle.text-center СКАЧИВАЙ ЭТУ БАЗУ, КОТОРУЮ МЫ СОБИРАЛИ ПОЧТИ 5 ЛЕТ
+						+e.price.text-center ЗА СИМВОЛИЧЕСКУЮ ПЛАТУ
+						+e.A(href="https://api.whatsapp.com/send?phone=77753281433&text=Здравствуйте!%20Я%20хочу%20заказать%20дизайн." target="_blank").link НАПИСАТЬ НА WHATSAPP
+						+e.text.text-center В WHATSAPP ТЫ УЗНАЕШЬ СТОИМОСТЬ <br> И РАЗМЕР СКИДКИ
+						+e.items
+							+e.item
+								img(src="img/calendar.png", alt="icon" width="512" height="512")
+								p База <br> собиралась <br> 5 лет
+							+e.item
+								img(src="img/wall-clock.png", alt="icon" width="512" height="512")
+								p Готовые, <br> вырезанные PNG. <br> Вы сэкономите <br> кучу времени
+							+e.item
+								img(src="img/like.png", alt="icon" width="512" height="512")
+								p Все картинки <br> в отличном <br> качестве
+
+				+e.img
+					img(src="img/1.png", alt="image")

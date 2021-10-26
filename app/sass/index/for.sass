@@ -1,21 +1,42 @@
 .for
 	padding-top: 90px
+	+sm-block
+		padding-top: 60px
+	+xs-block
+		padding-top: 30px
 
 	&__content
 		display: flex
 		border-bottom: 2px solid #16bee0
 		padding: 50px 0
+		+to(1023px)
+			flex-direction: column
+			padding: 30px 0
 
 	&__person
 		display: flex
 		flex-direction: column
 		min-width: 290px
 		+md-block
-			min-width: 190px
-			max-width: 190px
+			min-width: 220px
+			max-width: 220px
+		+to(1023px)
+			min-width: 0
+			max-width: 500px
+			flex-direction: row
+			align-items: center
+			img
+				width: 140px
+				margin-right: 10px
+		+xs-block
+			img
+				min-width: 100px
+				max-width: 100px
 
 	&__text
 		margin-top: 35px
+		+to(1023px)
+			margin-top: 0
 		strong
 			+adaptive-value('font-size', 26, 24, 1)
 			+f-black
@@ -27,103 +48,119 @@
 		+f-black
 		margin-bottom: 10px
 
-	&__slider-wrapper1
+	//-------------------- Swiper Slider -------------------->
+	&__slider-wrapper1,
+	&__slider-wrapper2,
+	&__slider-wrapper3
+		min-width: 0
 		position: relative
 		padding-left: 23px
 		margin-left: 70px
-		min-width: 0
 		+md-block
 			margin-left: 40px
+		+to(1023px)
+			margin-left: 0
+			margin-top: 20px
+			padding-left: 0
 
 		.swiper-slide
-			width: auto !important
 			text-align: center
 			margin-right: 20px
 			img
 				display: block
-				max-height: 280px
 				max-width: none
-				height: 280px
-			span
-				display: block
-				margin-top: 25px
 
 		.navigation
 			position: absolute
 			top: 50%
-			transform: translateY(-100%)
 			left: 0
 			width: 90%
 			display: flex
 			align-items: center
 			justify-content: space-between
 			z-index: 2
+			+xs-block
+				width: 100%
 
-	&__slider-wrapper2
-		position: relative
-		padding-left: 23px
-		margin-left: 70px
-		min-width: 0
-		+md-block
-			margin-left: 40px
-
+	// Slider Wrapper 1
+	&__slider-wrapper1
+		+to(1023px)
+			margin-top: 40px
 		.swiper-slide
-			width: auto !important
-			text-align: center
-			margin-right: 20px
+			width: auto
+			+xs-block
+				width: auto
 			img
-				display: block
-				max-height: 360px
-				max-width: none
-				min-height: 360px
-				// object-fit: cover
-				// height: 360px
+				max-height: 280px
+				height: 280px
+				+to(1023px)
+				+xs-block
+					height: 153px
+					max-width: 100%
 			span
 				display: block
 				margin-top: 25px
-
+				+xs-block
+					margin-top: 15px
+		.w217
+			+xs-block
+				width: 217px
+		.w259
+			+xs-block
+				width: 259px
+		.w160
+			+xs-block
+				width: 160px
+		.w162
+			+xs-block
+				width: 162px
 		.navigation
-			position: absolute
-			top: 50%
 			transform: translateY(-100%)
-			left: 0
-			width: 80%
-			display: flex
-			align-items: center
-			justify-content: space-between
-			z-index: 2
+			width: 90%
+			+xs-block
+				top: 58%
 
-	&__slider-wrapper3
-		position: relative
-		padding-left: 23px
-		margin-left: 70px
-		min-width: 0
-		+md-block
-			margin-left: 40px
-
+	// Slider Wrapper 2
+	&__slider-wrapper2
 		.swiper-slide
 			width: auto !important
-			text-align: center
-			margin-right: 20px
 			img
+				max-height: 360px
+				min-height: 360px
+			span
 				display: block
+				margin-top: 25px
+		.w220
+			+xs-block
+				width: 220px
+		.w158
+			+xs-block
+				width: 158px
+		.w120
+			+xs-block
+				width: 120px
+		.navigation
+			transform: translateY(-100%)
+			width: 80%
+
+	// Slider Wrapper 3
+	&__slider-wrapper3
+		.swiper-slide
+			width: auto !important
+			img
 				max-height: 355px
 				width: 355px
-				max-width: none
-				object-fit: cover
-				height: 100%
-				// height: 360px
+				+xs-block
+					max-height: 196px
+					width: 196px
+					height: 196px
 			span
 				display: block
 				margin-top: 25px
-
 		.navigation
-			position: absolute
-			top: 50%
 			transform: translateY(-170%)
-			left: 0
 			width: 90%
-			display: flex
-			align-items: center
-			justify-content: space-between
-			z-index: 2
+			+xs-block
+				transform: translateY(-115%)
+
+
