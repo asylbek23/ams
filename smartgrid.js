@@ -18,6 +18,10 @@ module.exports = {
 		},
 		xs: {
 			width: '480px'
+		},
+		xxs: {
+			width: '320px',
+			fields: '10px'
 		}
 	}
 };

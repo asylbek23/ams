@@ -1433,6 +1433,10 @@ html {
     height: 30px;
   }
 
+  .download__timer {
+    margin-top: 25px;
+  }
+
   .archive__img {
     min-width: 120px;
     max-width: 120px;
@@ -1538,5 +1542,143 @@ html {
 
   .about__left .text {
     margin-bottom: 12px;
+  }
+
+  .about .download__left {
+    width: auto;
+  }
+
+  .about .download__timer {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 11px;
+  }
+
+  .hero__title-top strong {
+    font-size: 54px;
+  }
+
+  .hero__title-top .title-yellow {
+    font-size: 50px;
+  }
+
+  .hero__title-bottom {
+    width: auto;
+    font-size: 34px;
+  }
+
+  .hero__title-bottom:after {
+    width: 40px;
+    height: 40px;
+    right: 0;
+  }
+
+  .hero__title-holiday span {
+    font-size: 34px;
+  }
+
+  .hero__title-holiday .little-title {
+    font-size: 12px;
+  }
+
+  .hero .subtitle {
+    font-size: 20px;
+  }
+
+  .download__price {
+    font-size: 12px;
+  }
+
+  .download__link {
+    width: 200px;
+    font-size: 12px;
+  }
+
+  .download__link:before {
+    left: -40px;
+    width: 28px;
+    height: 32px;
+  }
+
+  .download__link:after {
+    width: 27px;
+    height: 33px;
+    right: -40px;
+  }
+
+  .video {
+    margin-top: 40px;
+  }
+
+  .video__player {
+    height: 170px;
+    margin-top: 40px;
+  }
+
+  .video__player:before {
+    left: 0;
+    bottom: -40px;
+    width: 25px;
+    height: 30px;
+  }
+
+  .video__player:after {
+    top: -50px;
+    right: 0;
+    width: 30px;
+    height: 35px;
+  }
+
+  .themes {
+    margin-top: 20px;
+  }
+
+  .themes .swiper-slide {
+    width: 260px;
+    height: 480px;
+  }
+
+  .themes .swiper-slide span {
+    height: 63px;
+  }
+
+  .for__text strong {
+    font-size: 20px;
+  }
+
+  .for__text p {
+    font-size: 12px;
+  }
+
+  .for__subtitle {
+    font-size: 14px;
+  }
+
+  .about .download {
+    margin-top: 30px;
+  }
+
+  .about .download__stock p {
+    font-size: 11px;
+  }
+
+  .about .download__timer {
+    font-size: 40px;
+    line-height: 50px;
+    width: 65%;
+    height: 50px;
   }
 }

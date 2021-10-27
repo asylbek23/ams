@@ -1,6 +1,8 @@
 .video
 	margin-top: 60px
 	+adaptive-value('padding-bottom', 90, 40, 1)
+	+xxs-block
+		margin-top: 40px
 	h2
 		+to(1023px)
 			max-width: 420px
@@ -27,6 +29,9 @@
 		+xs-block
 			width: 100%
 			height: 210px
+		+xxs-block
+			height: 170px
+			margin-top: 40px
 		&:before
 			content: ''
 			position: absolute
@@ -48,6 +53,11 @@
 				transform: rotate(-65deg)
 			+xs-block
 				left: 7px
+			+xxs-block
+				left: 0
+				bottom: -40px
+				width: 25px
+				height: 30px
 
 		&:after
 			content: ''
@@ -73,6 +83,11 @@
 				top: -75px
 				width: 45px
 				height: 55px
+			+xxs-block
+				top: -50px
+				right: 0
+				width: 30px
+				height: 35px
 
 		video
 			width: 100%

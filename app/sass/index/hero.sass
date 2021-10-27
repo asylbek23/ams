@@ -26,6 +26,8 @@
 				color: #fff
 				+f-black
 				+adaptive-value('font-size', 82, 62, 1)
+				+xxs-block
+					font-size: 54px
 			.title-yellow
 				+f-bebas
 				+c-yellow
@@ -34,6 +36,8 @@
 				+to(1023px)
 					display: block
 					margin-left: 0
+				+xxs-block
+					font-size: 50px
 
 		&-bottom
 			color: #fff
@@ -45,6 +49,9 @@
 			+xs-block
 				justify-content: center
 				margin: 0 auto
+			+xxs-block
+				width: auto
+				font-size: 34px
 			.title-yellow
 				+c-yellow
 				margin-right: 10px
@@ -78,6 +85,10 @@
 					top: 40px
 					width: 60px
 					height: 60px
+				+xxs-block
+					width: 40px
+					height: 40px
+					right: 0
 
 		&-holiday
 			color: #fff
@@ -85,15 +96,21 @@
 				display: block
 				+f-bebas
 				+adaptive-value('font-size', 86, 42, 1)
+				+xxs-block
+					font-size: 34px
 			.little-title
 				display: inline
 				font-family: $main-medium
 				+adaptive-value('font-size', 24, 13, 1)
+				+xxs-block
+					font-size: 12px
 
 	//-------------------- Subtitle -------------------->
 	.subtitle
 		line-height: 1.1
 		+adaptive-value('font-size', 36, 24, 1)
+		+xxs-block
+			font-size: 20px
 
 	&__content
 		display: flex

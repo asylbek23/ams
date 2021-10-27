@@ -22,13 +22,13 @@ const swiper = new Swiper('.themes__slider', {
 	},
 
 	breakpoints: {
-		375: { // when window width is >= 375px
+		320: { // when window width is >= 320px
 			slidesPerView: 'auto',
 			slidesPerGroup: 1,
 			spaceBetween: 0,
 			loop: false
 		},
-		768: { // when window width is >= 375px
+		768: { // when window width is >= 768px
 			slidesPerView: 2,
 			slidesPerGroup: 2,
 		},
@@ -51,7 +51,7 @@ const swiper1 = new Swiper('.for__slider1', {
 	},
 
 	breakpoints: {
-		375: { // when window width is >= 375px
+		320: { // when window width is >= 320px
 			slidesPerView: 'auto',
 			loop: false,
 		},
@@ -72,7 +72,7 @@ const swiper2 = new Swiper('.for__slider2', {
 	},
 
 	breakpoints: {
-		375: { // when window width is >= 375px
+		320: { // when window width is >= 320px
 			loop: false,
 			initialSlide: 1
 		},
@@ -94,7 +94,7 @@ const swiper3 = new Swiper('.for__slider3', {
 	},
 
 	breakpoints: {
-		375: { // when window width is >= 375px
+		320: { // when window width is >= 320px
 			loop: false,
 		},
 		1024: { // when window width is >= 1024px
